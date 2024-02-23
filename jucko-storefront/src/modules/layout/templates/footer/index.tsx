@@ -39,8 +39,7 @@ export default async function Footer() {
                             <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
                   <a
-                    href="https://github.com/medusajs"
-                    target="_blank"
+                    href="/termsandconditions"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
@@ -49,8 +48,7 @@ export default async function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://docs.medusajs.com"
-                    target="_blank"
+                    href="/privacy"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
@@ -59,8 +57,7 @@ export default async function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/medusajs/nextjs-starter-medusa"
-                    target="_blank"
+                    href="/shippinganddelivery"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
@@ -69,24 +66,13 @@ export default async function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/medusajs/nextjs-starter-medusa"
-                    target="_blank"
+                    href="/returnsandrefunds"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
                     Return and Refund Policy
                   </a>
                  </li>
-                <li>
-                <a
-                    href="https://github.com/medusajs/nextjs-starter-medusa"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-ui-fg-base"
-                  >
-                   Terms of Use and Terms of Sale
-                  </a>
-                </li>
               </ul>
             </div>
           </div>
@@ -176,8 +162,8 @@ export default async function Footer() {
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
                   <a
-                    href="https://github.com/medusajs"
-                    target="_blank"
+                    href="/about"
+                    target="_self"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
@@ -186,22 +172,12 @@ export default async function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://docs.medusajs.com"
-                    target="_blank"
+                    href="/faq"
+                    target="_self"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    Mission Statement
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/medusajs/nextjs-starter-medusa"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-ui-fg-base"
-                  >
-                    Career at Jucko
+                    FAQ
                   </a>
                 </li>
               </ul>
@@ -220,7 +196,14 @@ export default async function Footer() {
           <Text className="txt-compact-small">
             © {new Date().getFullYear()} Jucko Store. All rights reserved.
           </Text>
-          <MedusaCTA />
+          <Text>Website by 
+                 <a
+                    href="https://www.mervert.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  > Mervert
+                  </a></Text>
         </div>
       </div>
     </footer>

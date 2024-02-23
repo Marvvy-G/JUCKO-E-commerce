@@ -5,6 +5,7 @@ import { Suspense } from "react"
 import { listRegions } from "@lib/data"
 import CartButton from "@modules/layout/components/cart-button"
 import SideMenu from "@modules/layout/components/side-menu"
+import JuckologoCTA from "@modules/layout/components/jucko-logo"
 
 export default async function Nav() {
   const regions = await listRegions().then((regions) => regions)
@@ -22,14 +23,17 @@ export default async function Nav() {
           </div>
 
           <div className="flex items-center h-full">
+          <JuckologoCTA />
             <Link
               href="/"
               className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
             >
+              
               JUCKO
             </Link>
           </div>
-
+          
+          
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
             <div className="hidden small:flex items-center gap-x-6 h-full">
               {process.env.FEATURE_SEARCH_ENABLED && (
@@ -43,6 +47,12 @@ export default async function Nav() {
               )}
               <Link className="hover:text-ui-fg-base" href="/account">
                 Account
+              </Link>
+              <Link className="hover:text-ui-fg-base" href="/categories/handmadebyjucko">
+                Hand Made by Jucko
+              </Link>
+              <Link className="hover:text-ui-fg-base" href="/categories/food">
+                Food Wonderland
               </Link>
             </div>
             <Suspense

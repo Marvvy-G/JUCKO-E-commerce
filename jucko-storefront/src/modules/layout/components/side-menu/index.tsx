@@ -14,6 +14,8 @@ const SideMenuItems = {
   Store: "/store",
   Search: "/search",
   Account: "/account",
+  HandMadeByJucko: "/categories/handmadebyjucko",
+  Food: "/categories/food",
   Cart: "/cart",
 }
 
