@@ -1,6 +1,7 @@
 import ChevronDown from "@modules/common/icons/chevron-down"
 import MedusaCTA from "@modules/layout/components/medusa-cta"
 import Link from "next/link"
+import JuckologoCTA from "@modules/layout/components/jucko-logo"
 
 export default function CheckoutLayout({
   children,
@@ -27,6 +28,7 @@ export default function CheckoutLayout({
             href="/"
             className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
           >
+            <JuckologoCTA /> 
             Jucko
           </Link>
           <div className="flex-1 basis-0" />

@@ -34,7 +34,7 @@ export const ReturnsRefundsTemplate = () => {
              
           Once we receive your item, we will inspect it and notify you that we have received your returned item. We will immediately notify you on the status of your refund after inspecting the item.
     
-          If your return is approved, we will initiate a refund to your credit card (or original method of payment). You will receive the credit within a certain amount of days, depending on your card issuer's policies.
+          If your return is approved, we will initiate a refund to your credit card (or original method of payment). You will receive the credit within a certain amount of days, depending on your card issuer&apos;s policies.
           </p>
         </div>
         <div data-custom-class="heading_1">

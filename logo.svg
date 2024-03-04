@@ -1,6 +1,4 @@
-const juckologo = () => {
-    return(
-<svg width="40px" height="40px" viewBox="0 0 256.000000 256.000000" xmlns="http://www.w3.org/2000/svg">
+<svg width="256.000000pt" height="256.000000pt" viewBox="0 0 256.000000 256.000000" xmlns="http://www.w3.org/2000/svg">
   <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)" fill="#fefefe" stroke="none">
     <path d="M0 1280 l0 -1280 1280 0 1280 0 0 1280 0 1280 -1280 0 -1280 0 0
 -1280z m1090 852 l22 -17 33 -110 33 -110 642 -5 643 -5 19 -26 19 -25 -65
@@ -668,6 +666,3 @@ l150 0 0 120 c0 66 -3 120 -7 120 -5 0 -7 -52 -5 -116z" />
   <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)" fill="#9cb3d4" stroke="none" />
   <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)" fill="#4f7bb5" stroke="none" />
 </svg>
-    )
-}
-export default juckologo

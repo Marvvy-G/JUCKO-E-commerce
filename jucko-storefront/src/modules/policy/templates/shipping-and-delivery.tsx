@@ -6,7 +6,7 @@ export const ShippingDeliveryTemplate = () => {
          <Heading level='h2' className="pt-6 flex flex-row text-3xl-regular"> Shipping and Delivery Policy</Heading>
             <div   style={{ textAlign: 'left' }}>
         <div className="MsoNormal" data-custom-class="body_text" style={{ lineHeight: '1.5' }}>
-         <p> Thank you for choosing <b>JUCKO GLOBAL</b> ('<strong>Company</strong>', '<strong>we</strong>', '<strong>us</strong>', or '<strong>our</strong>').{' '}
+         <p> Thank you for choosing <b>JUCKO GLOBAL</b> (&apos;<strong>Company</strong>&apos;, &apos;<strong>we</strong>&apos;, &apos;<strong>us</strong>&apos;, or &apos;<strong>our</strong>&apos;).{' '}
          <br />
          We are committed to providing you with a seamless shopping experience, including reliable shipping and delivery services for your orders.
          </p>

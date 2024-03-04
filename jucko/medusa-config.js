@@ -41,12 +41,41 @@ const plugins = [
     /** @type {import("medusa-payment-paystack").PluginOptions} */
     options: {
       secret_key: process.env.PAYSTACK_SECRET_KEY,
+      webhook_secret: process.env.PAYSTACK_WEBHOOK_SECRET,
     },
   },
   {
     resolve: `@medusajs/file-local`,
     options: {
       upload_dir: "uploads",
+    },
+  },
+  {
+    resolve: `medusa-plugin-algolia`,
+    options: {
+      applicationId: process.env.ALGOLIA_APP_ID,
+      adminApiKey: process.env.ALGOLIA_ADMIN_API_KEY,
+      settings: {
+        // index settings...
+        products: {
+          indexSettings: {
+            searchableAttributes: ["title", "description"],
+            attributesToRetrieve: [
+              "id",
+              "title",
+              "description",
+              "handle",
+              "thumbnail",
+              "variants",
+              "variant_sku",
+              "options",
+              "collection_title",
+              "collection_handle",
+              "images",
+            ],
+          },
+        },
+      },
     },
   },
   {
@@ -59,23 +88,6 @@ const plugins = [
       },
     },
   },
-  {
-    resolve: `medusa-payment-stripe`,
-    options: {
-      api_key: process.env.STRIPE_API_KEY,
-      webhook_secret: process.env.STRIPE_WEBHOOK_SECRET,
-    },
-  },
-  {
-    resolve: `medusa-payment-paypal`,
-    options: {
-      sandbox: process.env.PAYPAL_SANDBOX,
-      clientId: process.env.PAYPAL_CLIENT_ID,
-      clientSecret: process.env.PAYPAL_CLIENT_SECRET,
-    },
-  },
- 
-
 ];
 
 const modules = {

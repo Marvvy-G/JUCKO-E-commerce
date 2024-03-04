@@ -22,14 +22,14 @@ export default async function Nav() {
             </div>
           </div>
 
-          <div className="flex items-center h-full">
-          <JuckologoCTA />
+          <div className="flex items-center justify-center h-full">
             <Link
               href="/"
               className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
             >
-              
-              JUCKO
+               
+               <JuckologoCTA />  
+               JUCKO
             </Link>
           </div>
           

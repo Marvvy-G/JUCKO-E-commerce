@@ -44,6 +44,7 @@
     "medusa-payment-paypal": "^6.0.2",
     "medusa-payment-paystack": "^1.2.1",
     "medusa-payment-stripe": "^6.0.7",
+    "medusa-plugin-algolia": "^0.2.20",
     "next": "^14.1.0",
     "prism-react-renderer": "^2.0.4",
     "typeorm": "^0.3.16"

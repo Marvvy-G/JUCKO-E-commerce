@@ -41,7 +41,7 @@ const Review = ({
             <div className="w-full">
               <Text className="txt-medium-plus text-ui-fg-base mb-1">
                 By clicking the Place Order button, you confirm that you have
-                read, understand and accept our Terms of Use, Terms of Sale and
+                read, understand and accept our Terms and Conditions and
                 Returns Policy and acknowledge that you have read Jucko
                 Store&apos;s Privacy Policy.
               </Text>

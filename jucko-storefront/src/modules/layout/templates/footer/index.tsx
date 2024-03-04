@@ -3,9 +3,11 @@ import Link from "next/link"
 
 import { getCategoriesList, getCollectionsList } from "@lib/data"
 
-import MedusaCTA from "../../components/medusa-cta"
+
 import SocialsCTA from "@modules/layout/components/socials-cta"
 import PaymentsCTA from "@modules/layout/components/payments-cta"
+import JuckologoCTA from "@modules/layout/components/jucko-logo"
+
 
 const fetchCollections = async () => {
   const { collections } = await getCollectionsList()
@@ -32,11 +34,14 @@ export default async function Footer() {
             <Link
               href="/"
               className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
-            >
-              JUCKO
+            > 
+            <JuckologoCTA />
+            JUCKO
             </Link>
+           
             <div className="flex flex-col gap-y-2">
-                            <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
+           
+              <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
                   <a
                     href="/termsandconditions"
@@ -75,6 +80,9 @@ export default async function Footer() {
                  </li>
               </ul>
             </div>
+
+            
+
           </div>
           <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
             {productCategories && productCategories?.length > 0 && (
