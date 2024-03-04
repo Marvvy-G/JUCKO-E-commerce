@@ -44,6 +44,7 @@ const plugins = [
       webhook_secret: process.env.PAYSTACK_WEBHOOK_SECRET,
     },
   },
+  
   {
     resolve: `@medusajs/file-local`,
     options: {
@@ -118,7 +119,15 @@ const projectConfig = {
 
 /** @type {import('@medusajs/medusa').ConfigModule} */
 module.exports = {
-  projectConfig,
+  projectConfig:{
+    //...
+    database_extra: process.env.NODE_env !== "development" ?
+    {
+      ssl: {
+        rejectUnauthorized: false,
+      },
+    } : {},
+  },
   plugins,
   modules,
   featureFlags: {
